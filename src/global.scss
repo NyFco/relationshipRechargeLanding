@@ -1,0 +1,76 @@
+@import "./styles/variables.scss";
+
+.normalBtn {
+  cursor: pointer;
+  outline: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: $borderRadius;
+  font-size: 1rem;
+  font-family: inherit;
+  background: $primary;
+  color: $light;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: 0.3s ease all;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    border-color: $primary;
+    background: rgba($primary, 0.1);
+    color: $primary;
+  }
+  &:active {
+    border-color: $primary;
+    background: linear-gradient(rgba($primary, 0.2), rgba($primary, 0.3));
+    color: $primary;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.ant-collapse {
+  border: 2px solid #fff;
+  border-radius: 0;
+}
+
+.ant-collapse-item:last-child {
+  border-radius: 0 !important;
+}
+
+.ant-collapse-item {
+  background-color: #CA275A;
+  border: 2px solid #fff;
+}
+
+.ant-collapse-header {
+  color: #fff !important;
+}
+
+.ant-collapse-content-box {
+  background-color: #bd5b78;
+  color: #fff;
+}
+
+#heart_sec {
+  height: 200px;
+  background: linear-gradient(180deg, #e5923e 0%, #df836e 51.39%, #d4573f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    max-width: 380px;
+  }
+}
+
+.emailInput {
+  box-shadow: inset 0px 2px 12px rgba(0, 0, 0, 0.5);
+  padding: 15px 30px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
